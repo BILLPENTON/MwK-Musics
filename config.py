@@ -40,10 +40,10 @@ else:
     finalurl=STREAM
 
 class Config:
-    ADMIN = os.environ.get("ADMINS", '')
+    ADMIN = os.environ.get("ADMINS", '1197404093')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    API_ID = int(os.environ.get("API_ID", ''))
-    CHAT = int(os.environ.get("CHAT", ""))
+    API_ID = int(os.environ.get("API_ID", '7073300'))
+    CHAT = int(os.environ.get("CHAT", "1215554399"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
@@ -51,12 +51,12 @@ class Config:
         LOG_GROUP=None
     STREAM_URL=finalurl
     ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "Y")
-    ARQ_API=os.environ.get("ARQ_API", "")
+    ARQ_API=os.environ.get("ARQ_API", "LSLHIL-HGARDP-PLIXOB-CKHZEO-ARQ")
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", None)
     DURATION_LIMIT=int(os.environ.get("DUR", 15))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
-    SESSION = os.environ.get("SESSION_STRING", "SESSION")
+    API_HASH = os.environ.get("API_HASH", "7fc8f6ec7a39ba84b6b0162369b047ad")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "1848759153:AAFWIIxE3siLXVwcODp9HGuJzkmnW6jlSrQ") 
+    SESSION = os.environ.get("SESSION_STRING", "AQAdNlfoA4BYfNseeQcAqnLeXX72CR0W_vClGDdLfTCz7vD39fsyI7Y92Z-M25h8hPfSUtfnXvmA91XeiwhHDpWrghCsa3VN0bxw30Q1aZ-V3myJLeUNJqmarK75cAPusOUSY9knKBFCVN3CBSKP4GYfabT5jAWa6g93zMn4jC157AiC7ftS-BQyipszgpclx7QQmUy1NfTAn6SFeQQzMa7V6ziKtwLXn4y4lAm-SAJqMQMUU8rBbm2WOwEwBqU-OxDm8NbFDuuIDuJ2ir--1AhBkeLQJHxn7q3n02XtAYxjQujcBM8VyiDP2z02FWsUQtS0Da9YmarEFE-24bSq9RheR17vvQA")
     DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
     playlist=[]
     msg = {}
